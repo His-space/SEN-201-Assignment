@@ -35,3 +35,8 @@ Out of Range Bug: Initially, the system did not filter numbers outside 1-100. Th
 Non-Integer Input: If a user enters letters or symbols, the std::cin buffer enters a fail state, causing an infinite loop.
 
 Future Iterations: The next update will include an input sanitization to handle non-integer inputs error free
+
+    HOW TO RUN
+1. Open terminal: Use integrated terminal in VSCode
+2. Compile: Type "g++ assignment.cpp -o guessing_game" and Enter
+3. Run: Type "./guessing_game" (on Mac/Linux) or "guessing_game.exe" (on Windows) to start the game. If this doesn't work (on Windows), type "./guessing_game.exe"
