@@ -11,6 +11,7 @@ int main(){
 
     //variables(defined in README.md)
     int secret_number = rand() % 100 + 1; //random number between 1 and 100
+    //int secret_number = 55; //testing
     int user_guess = 0;
     int number_of_attempts = 0;
 
@@ -26,25 +27,28 @@ int main(){
         number_of_attempts++;
 
         //now for the conditionals
-        if (user_guess < secret_number){
+        if (user_guess < 1 || user_guess > 100){
+            cout << "Out of range! Please enter a number between 1 and 100." << endl;
+        }
+        else if (user_guess < secret_number){
             cout << "Too low! Try again." << endl;
         }
         else if (user_guess > secret_number){
             cout << "Too high! Try again." << endl;
-        }
-        else if (user_guess < 1 || user_guess > 100){
-            cout << "Please enter a number between 1 and 100." << endl;
-        }
-        else if (user_guess != static_cast<int>(user_guess)){
-            cout << "Invalid input. Please enter a number." << endl;
-        }
-        
-        else if (number_of_attempts >= 15){
+        }        
+        else if (number_of_attempts >= 10){
             cout << "Sorry, you've used all your attempts. The secret number was " << secret_number << "." << endl;
         }
         else {
             cout << "Congrats! You've guessed the number " << secret_number << " in " << number_of_attempts << " attempts." << endl;
         }
+        if (number_of_attempts >= 10 && user_guess != secret_number){
+            /* code */
+            cout << "Aww, seems you were a bit unlucky. The secret number was " << secret_number << "." << endl;
+            cout << "Better luck next time!" << endl;
+            break;
+        }
+        
     }while (user_guess != secret_number);
 
     return 0;
