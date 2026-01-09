@@ -36,21 +36,16 @@ int main(){
         else if (user_guess > secret_number){
             cout << "Too high! Try again." << endl;
         }        
-        else if (number_of_attempts >= 10){
-            cout << "Sorry, you've used all your attempts. The secret number was " << secret_number << "." << endl;
-        }
         else {
             cout << "Congrats! You've guessed the number " << secret_number << " in " << number_of_attempts << " attempts." << endl;
+            if (number_of_attempts <= 3){
+                cout << "Excellent, you guessed it in just a few tries!" << endl;
+            }
         }
+        //loss conditional
         if (number_of_attempts >= 10 && user_guess != secret_number){
-            /* code */
-            cout << "Aww, seems you were a bit unlucky. The secret number was " << secret_number << "." << endl;
-            cout << "Better luck next time!" << endl;
-            break;
+            cout << "Sorry, you've used all your attempts. The secret number was " << secret_number << "." << endl;
         }
-        
-    }while (user_guess != secret_number);
-
+    }while (user_guess != secret_number && number_of_attempts < 10);
     return 0;
-
 }
