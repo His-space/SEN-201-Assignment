@@ -27,7 +27,7 @@ Test Case 3: I inputed the correct guess, I expected "Congrats" message and tota
 
 DEPLOYMENT
 Hosting: This project is delpoyed and hosted on GitHub
-Repository Link: 'link'
+Repository Link: '[link](https://github.com/His-space/SEN-201-Assignment)'
 
 MAINTEANCE AND KNOWN ISSUES
 Out of Range Bug: Initially, the system did not filter numbers outside 1-100. This was fixed by adding a range-check conditional at the start of the loop.
