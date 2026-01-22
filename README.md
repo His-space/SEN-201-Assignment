@@ -1,5 +1,9 @@
 A SYSTEM DEVELOPMENT LIFE CYCLE (SDLC) IMPLEMENTATION - SEN 201 ASSIGNMENT
 
+NAME: Olawale Jesupamilerin Toluwanimi
+MATRIC: 25/18062
+DEPARTMENT: Computer Science
+
 REQUIREMENT ANALYSIS
 Statement: This system is a Number Guessing Game you can use to relax after a rigorous day at work or school, or to test how lucky you really are
 Functional Requirements: The user shall enter a random numerical value from a range of 1 to 100 as their guess
